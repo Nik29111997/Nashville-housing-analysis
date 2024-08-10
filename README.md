@@ -96,6 +96,51 @@ The cleaned dataset is now ready for detailed analysis, with all major data qual
 - seaborn
 - scikit-learn (for KNN imputation)
 
+# Nashville Housing Data Analysis
+
+Welcome to the **Nashville Housing Data Analysis** project! This repository contains a comprehensive analysis of the Nashville Housing dataset using R. The analysis explores various statistical and predictive modeling techniques to uncover insights into the housing market.
+
+## Project Overview
+
+This project aims to analyze the Nashville Housing dataset to understand the factors influencing property sale prices. The analysis includes descriptive statistics, hypothesis testing, and regression modeling to provide a detailed understanding of the housing market dynamics.
+
+## Features
+
+1. **Data Loading and Preparation**
+   - Utilized the `readr` library to efficiently load the dataset.
+   - Performed initial data exploration using `dplyr` and `psych` for data manipulation and descriptive statistics.
+
+2. **Descriptive Statistics**
+   - Provided comprehensive summary statistics for key variables such as **SalePrice**, **Acreage**, **Bedrooms**, and **YearBuilt**.
+   - Visualized the distribution of **SalePrice** using histograms and density plots with `ggplot2`.
+
+3. **Hypothesis Testing**
+   - Conducted a one-sample t-test to determine if the mean **SalePrice** is significantly different from $300,000.
+
+4. **Regression Analysis**
+   - **Simple Linear Regression:** Modeled the relationship between **SalePrice** and **Bedrooms**.
+   - **Multiple Linear Regression:** Explored the impact of multiple predictors (**Bedrooms**, **Acreage**, **YearBuilt**, **TotalBathrooms**) on **SalePrice**.
+   - **Polynomial Regression:** Captured non-linear relationships between predictors and **SalePrice**.
+   - **Decision Trees and Random Forest:** Implemented tree-based models to capture complex interactions and improve prediction accuracy.
+   - **Lasso Regression:** Employed regularization to enhance feature selection and reduce model complexity.
+
+5. **Visualization**
+   - Created informative visualizations to illustrate findings and support data-driven insights.
+
+## Key Insights
+
+- **Sale Price Distribution:** The distribution of sale prices is right-skewed, indicating a few high-value properties.
+- **Significant Predictors:** Variables such as **Acreage** and **TotalBathrooms** have a significant impact on sale prices.
+- **Model Performance:** While linear models provide basic insights, tree-based models offer better accuracy by capturing complex interactions.
+
+## Conclusion
+
+This analysis provides valuable insights into the Nashville housing market, highlighting key factors that influence property values. Future work could involve incorporating additional features or exploring more advanced models to further enhance predictive performance.
+
+## Getting Started
+
+To reproduce the analysis, clone this repository and run the R scripts provided. Ensure you have the necessary libraries installed (`readr`, `dplyr`, `ggplot2`, `psych`, `rpart`, `randomForest`, `glmnet`).
+
 ## Author
 
 Nikhil Bhati
